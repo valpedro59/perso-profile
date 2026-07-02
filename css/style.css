@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #aca8ae 0%, #d4d3d8 100%);
+    color: #333333;
+}
+h1, h2, h3, h4, h5,h6 {
+    font-family: "Ubuntu", serif;
+    text-align: center;
+}
+header {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+header h1 {
+    font-family: 'Ubuntu', serif;
+    font-size: 2.5rem;
+    /* color: #000000; */
+    color: #87563e;
+}
+header p {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+header img {
+    height: 500px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ab714c;
+}
+hr {
+    width: 50%;
+    border: none;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #666666;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+ul li {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+dt {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+dd {
+    font-size: 1.2rem;
+}
+dd:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: #ab714c;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form label {
+    font-size: .95rem;
+    font-weight: 500;
+    margin-bottom: -5px;
+
+
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    font-size: 1rem;
+    padding: 12px;
+    border: 2px solid #222222; /* Gris clair de votre fond pour harmoniser */
+    border-radius: 6px;
+    background-color: #f9f9fb;
+    color: #222222;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:hover,
+form textarea:hover {
+    border-color: #aca8ae;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #2563eb; /* Bleu vif de votre H1 */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15); 
+}
+
+form button {
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+form button:hover {
+    color: #ab714c;
+    background-color: #ffffff;
+}
+
+form button:active {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+footer {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+.social-link li a {
+    text-decoration: none;
+    color: #222222;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+.social-link li a:visited {
+    color: #555555;
+}
+.social-link li a:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+.social-link li a:active {
+    color: #333333;
+}
+
+@media screen and (max-width: 1200px)  {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
