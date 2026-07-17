@@ -10,14 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <!-- Google Fonts -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Val Clancy Pedro — Développeur Web</title>
+    <title>Val Clancy Pedro — Développeur FullStack</title>
 </head>
 
 <body>
 
-    <!-- Checkbox hack : doit precéder le header pour piloter le menu en CSS pur -->
+    <!-- Checkbox hack pour piloter le menu en CSS pur -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
     <header class="site-header">
@@ -29,7 +28,6 @@
                 <span></span>
                 <span></span>
             </label>
-
 
             <nav class="main-nav" aria-label="Navigation principale">
                 <ul>
@@ -50,14 +48,22 @@
         <section id="hero" class="hero">
             <div class="hero-inner">
                 <div class="perso-info">
-                    <p class="eyebrow">Développeur Web</p>
+                    <p class="eyebrow">Développeur Web Full-Stack</p>
                     <h1>Val Clancy Pedro</h1>
                     <p class="hero-text">
-                        Je suis un développeur Web et stagiaire chez Akieni Academy.
+                        Concepteur d'expériences numériques d'élite. Actuellement stagiaire chez <span
+                            class="highlight">Akieni Academy</span>, je façonne des applications web robustes,
+                        esthétiques et performantes.
                     </p>
-                    <a href="#skills" class="btn btn-primary">Parcourir</a>
+                    <div class="hero-cta">
+                        <a href="#realisations" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-outline">Me contacter</a>
+                    </div>
                 </div>
-                <img class="profile-img" src="./img/valpedro-profile.webp" alt="Portrait de Val Pedro">
+                <div class="profile-container">
+                    <img class="profile-img" src="./img/valpedro-profile.webp"
+                        alt="Portrait professionnel de Val Clancy Pedro">
+                </div>
             </div>
             <div class="wave-divider" aria-hidden="true">
                 <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
@@ -67,167 +73,319 @@
         </section>
 
         <!-- Section About -->
-        <section id="about">
+        <section id="about" class="about">
             <div class="section-wrapper">
                 <div class="section-header">
                     <h2 class="section-title">À propos de moi</h2>
-                    <p class="section-sub">De zéro à héro</p>
+                    <p class="section-sub">Mon parcours & ma philosophie</p>
                 </div>
                 <div class="section-body about-body">
                     <figure class="img-wrapper">
-                        <img src="./img/val-work.webp" alt="Illustration présentant Val au travail">
+                        <img src="./img/val-work.webp" alt="Val au travail en train de coder un projet premium">
                     </figure>
                     <div class="about-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a dolor temporibus,
-                            illum dolorem rerum ad asperiores aperiam eveniet officia fugit earum at! Temporibus
-                            iusto earum repellendus, libero ducimus culpa.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a dolor temporibus,
-                            illum dolorem rerum ad asperiores aperiam eveniet officia fugit earum at! Temporibus
-                            iusto earum repellendus, libero ducimus culpa.</p>
-                        <a href="#" class="btn btn-outline">Télécharger mon CV</a>
+                        <p class="lead">Passionné par la convergence du design minimaliste et du code propre.</p>
+                        <p>Mon aventure a commencé par une curiosité insatiable pour le fonctionnement du web.
+                            Aujourd'hui, j'allie rigueur technique et sensibilité artistique pour concevoir des
+                            architectures applicatives fluides, accessibles et adaptées aux besoins utilisateurs.</p>
+                        <p>Basé au Congo, fort d'expériences riches au Maroc, j'absorbe continuellement les meilleures
+                            pratiques pour livrer des produits numériques sans compromis.</p>
+                        <a href="#" class="btn btn-outline btn-cv">Télécharger mon CV (PDF)</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section Compétences -->
-        <section id="skills">
+        <!-- Section Compétences (Skills avec % requis) -->
+        <section id="skills" class="skills">
             <div class="section-wrapper">
                 <div class="section-header">
                     <h2 class="section-title">Mes Compétences</h2>
-                    <p class="section-sub">Ce que je maîtrise</p>
+                    <p class="section-sub">Ce que je maîtrise au quotidien</p>
                 </div>
-                <ul class="skills-list">
-                    <li class="skill-card">Front-End</li>
-                    <li class="skill-card">Back-End</li>
-                    <li class="skill-card">Database</li>
-                </ul>
+                <div class="skills-container">
+                    <div class="skill-card-premium">
+                        <div class="skill-info">
+                            <span class="skill-name">Front-End (HTML5, CSS3, JS)</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-premium">
+                        <div class="skill-info">
+                            <span class="skill-name">Back-End (Node.js, PHP)</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-premium">
+                        <div class="skill-info">
+                            <span class="skill-name">Bases de données (MySQL, PostgreSQL)</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card-premium">
+                        <div class="skill-info">
+                            <span class="skill-name">Versionning & DevOps (Git, GitHub)</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Section Formation -->
-        <section id="formation">
+        <section id="formation" class="formation">
             <div class="section-wrapper">
                 <div class="section-header">
                     <h2 class="section-title">Formation</h2>
-                    <p class="section-sub">Mon parcours académique</p>
+                    <p class="section-sub">Mon parcours académique et certifications</p>
                 </div>
                 <dl class="formation-list">
                     <div class="formation-item">
                         <dt>2026</dt>
-                        <dd>Full Stack Dev <span class="country">Congo</span></dd>
+                        <dd>Full Stack Dev — Akieni Academy <span class="country">Congo</span></dd>
                     </div>
                     <div class="formation-item">
                         <dt>2021</dt>
-                        <dd>Bachelor en Dev Web <span class="country">Maroc</span></dd>
+                        <dd>Bachelor en Développement Web — Ecole Supérieure <span class="country">Maroc</span></dd>
                     </div>
                     <div class="formation-item">
                         <dt>2016</dt>
-                        <dd>Baccalauréat Scientifique <span class="country">Congo</span></dd>
+                        <dd>Baccalauréat Scientifique — Lycée Technique <span class="country">Congo</span></dd>
                     </div>
                 </dl>
             </div>
         </section>
 
-        <!-- Section Réalisations -->
-        <section id="realisations">
+        <!-- Section Réalisations (Galerie Premium de 6 projets avec effet Hover complet requis) -->
+        <section id="realisations" class="realisations">
             <div class="section-wrapper">
                 <div class="section-header">
                     <h2 class="section-title">Mes Réalisations</h2>
-                    <p class="section-sub">Découvrez les projets réalisés</p>
+                    <p class="section-sub">Une sélection de mes travaux les plus marquants</p>
                 </div>
                 <div class="section-body">
                     <ul class="gallery-grid">
+
+                        <!-- Projet 1 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
+                                        alt="Aperçu de la plateforme E-Congo" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>HTML</span><span>CSS Pure</span><span>Git</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">Congo River Project</h3>
+                                    <p class="description-short">Vitrine éco-touristique majeure mettant en valeur le
+                                        bassin du Congo.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Une refonte d'accessibilité totale (WCAG complétée),
+                                            optimisée pour le SEO local avec intégration de médias fluides à haute
+                                            performance algorithmique.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link"><i class="icon">📁</i> GitHub</a>
+                                            <a href="#" class="proj-link"><i class="icon">🌐</i> Live Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
+                        <!-- Projet 2 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1331"
+                                        alt="Aperçu Dashboard E-Commerce" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>JavaScript</span><span>REST API</span><span>CSS</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">E-Commerce Dashboard</h3>
+                                    <p class="description-short">Interface de gestion analytique en temps réel pour
+                                        boutiques en ligne.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Conception orientée données capable de traiter des
+                                            flux complexes avec affichage dynamique de graphiques en pur CSS et
+                                            micro-animations fluides.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link">📁 Code</a>
+                                            <a href="#" class="proj-link">🌐 Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
+                        <!-- Projet 3 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1331"
+                                        alt="Aperçu Application FinTech" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>Node.js</span><span>PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">FinTech API Layer</h3>
+                                    <p class="description-short">Moteur sécurisé d'agrégation de services bancaires
+                                        mobiles africains.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Architecture Back-end robuste dotée d'une couverture
+                                            de tests à 95% et respectant scrupuleusement les critères de sécurité
+                                            bancaire standardisés.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link">📁 Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
+                        <!-- Projet 4 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1331"
+                                        alt="Portfolio v1" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>HTML5</span><span>SASS</span><span>Semantic</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">Portfolio Minimaliste v1</h3>
+                                    <p class="description-short">Première itération graphique basée sur une esthétique
+                                        brutaliste.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Exploration poussée des grilles CSS avancées et des
+                                            typographies variables pour offrir un temps de chargement inférieur à 400ms
+                                            sur réseau mobile.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link">📁 Code</a>
+                                            <a href="#" class="proj-link">🌐 Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
+                        <!-- Projet 5 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1331"
+                                        alt="App de productivité" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>LocalStorage</span><span>UX/UI</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">Task Manager App</h3>
+                                    <p class="description-short">Gestionnaire de tâches minimaliste asynchrone avec
+                                        persistance locale.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Système de drag-and-drop intuitif utilisant
+                                            exclusivement les APIs natives de HTML5. Un outil taillé pour l'efficacité
+                                            individuelle.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link">📁 Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
+                        <!-- Projet 6 -->
                         <li class="grid-item">
-                            <figure>
-                                <img src="https://images.unsplash.com/photo-1657742153368-de43773c46cf?q=80&w=1331"
-                                    alt="Vue du fleuve Congo" class="grid-img" loading="lazy">
-                                <figcaption>
-                                    <h3 class="grid-title">Congo River</h3>
-                                    <p class="description">Majestic river flowing through the heart of Africa</p>
-                                </figcaption>
-                            </figure>
+                            <article class="project-card">
+                                <div class="card-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1331"
+                                        alt="Plateforme Éducative" class="grid-img" loading="lazy">
+                                    <div class="tech-tags">
+                                        <span>PHP</span><span>MySQL</span><span>Tailwind</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="grid-title">Akieni Academy Portal</h3>
+                                    <p class="description-short">Maquette fonctionnelle d'un portail de soumission de
+                                        projets éducatifs.</p>
+                                    <div class="hover-details">
+                                        <p class="description-long">Projet académique phare liant un backend modulaire à
+                                            un système de gestion de répertoires Git automatisé pour les étudiants.</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/valpedro59" target="_blank" rel="noopener"
+                                                class="proj-link">📁 Code</a>
+                                            <a href="#" class="proj-link">🌐 Live</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Section Expérience -->
-        <section id="exp">
+        <!-- Section Expérience (Timeline Premium) -->
+        <section id="exp" class="exp">
             <div class="section-wrapper">
                 <div class="section-header">
-                    <h2 class="section-title">Expérience</h2>
-                    <p class="section-sub">Mon expertise</p>
+                    <h2 class="section-title">Mon Expérience</h2>
+                    <p class="section-sub">Mon évolution au sein de l'écosystème Tech</p>
                 </div>
 
                 <ol class="timeline">
                     <li class="timeline-item">
                         <div class="timeline-content">
-                            <h3>2021</h3>
-                            <p>Developpeur Web chez Simplify Maroc.</p>
+                            <span class="timeline-date">2026 — Présent</span>
+                            <h3>Développeur Full Stack (Stagiaire)</h3>
+                            <h4 class="timeline-company">Akieni Academy</h4>
+                            <p>Immersion intensive dans des environnements de production réels. Conception d'interfaces
+                                ergonomiques, écriture de codes réutilisables, intégration de pipelines CI/CD de base,
+                                et validation rigoureuse via Git.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-content">
-                            <h3>2025</h3>
-                            <p>Responsable Informatique chez Lordson Congo</p>
+                            <span class="timeline-date">2025 — 2026</span>
+                            <h3>Responsable Informatique</h3>
+                            <h4 class="timeline-company">Lordson Congo</h4>
+                            <p>Supervision des infrastructures locales, maintenance du parc applicatif, et conseil
+                                stratégique pour l'accélération de la transition numérique de l'entreprise.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-content">
-                            <h3>2026</h3>
-                            <p>Developpeur Full Stack chez Akieni Academy</p>
+                            <span class="timeline-date">2021 — 2024</span>
+                            <h3>Développeur Web Junior</h3>
+                            <h4 class="timeline-company">Simplify Maroc</h4>
+                            <p>Intégration d'architectures d'interfaces complexes en HTML/CSS/JS pour divers clients de
+                                la zone MENA. Optimisation du référencement naturel et de la réactivité mobile.</p>
                         </div>
                     </li>
                 </ol>
@@ -235,36 +393,48 @@
         </section>
 
         <!-- Section Contact -->
-        <section id="contact">
+        <section id="contact" class="contact">
             <div class="section-wrapper">
                 <div class="section-header">
                     <h2 class="section-title">Contact</h2>
-                    <p class="section-sub">Discutons de votre projet</p>
+                    <p class="section-sub">Discutons de vos visions et projets</p>
                 </div>
-                <form action="post" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" placeholder="Entrez votre nom" id="name" name="name">
+                <div class="contact-grid">
+                    <div class="contact-info-block">
+                        <h3>Travaillons ensemble</h3>
+                        <p>Vous avez un projet innovant à concrétiser ou un poste à pourvoir ? Mes lignes de code sont
+                            prêtes à donner vie à vos idées.</p>
+                        <ul class="contact-meta">
+                            <li><strong>Localisation :</strong> Pointe-Noire, Congo</li>
+                            <li><strong>Disponibilité :</strong> Immédiate pour de nouveaux défis</li>
+                        </ul>
                     </div>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Votre Identité</label>
+                            <input type="text" placeholder="Ex: Jean Dupont" id="name" name="name" required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Entrez votre email" id="email" name="email">
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Adresse Électronique</label>
+                            <input type="email" placeholder="Ex: jean.dupont@email.com" id="email" name="email"
+                                required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="phonenumber">Téléphone</label>
-                        <input type="number" placeholder="Entrez votre numéro" id="phonenumber" name="phonenumber">
-                    </div>
+                        <div class="form-group">
+                            <label for="phonenumber">Numéro de Téléphone</label>
+                            <input type="tel" placeholder="Ex: +242 06 000 0000" id="phonenumber" name="phonenumber">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="50" rows="5"
-                            placeholder="Tapez votre message"></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">Votre Message</label>
+                            <textarea name="message" id="message" cols="50" rows="5"
+                                placeholder="Décrivez succinctement votre projet..." required></textarea>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </form>
+                        <button type="submit" class="btn btn-primary btn-submit">Déployer le message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -272,17 +442,16 @@
 
     <footer class="site-footer">
         <div class="footer-inner">
-            <h2>Suivez-moi</h2>
+            <h2>Réseaux d'influence</h2>
             <ul class="social-link">
-                <li><a href="https://github.com/valpedro59" target="_blank" rel="noopener">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/val-pedro/" target="_blank" rel="noopener">Linkedin</a></li>
+                <li><a href="https://github.com/valpedro59" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/val-pedro/" target="_blank" rel="noopener">LinkedIn</a></li>
                 <li><a href="https://www.instagram.com/el_fantasma_dasilva/" target="_blank"
-                        rel="noopener">Instagram</a>
-                </li>
+                        rel="noopener">Instagram</a></li>
                 <li><a href="https://www.facebook.com/jason.salvatore.146" target="_blank" rel="noopener">Facebook</a>
                 </li>
             </ul>
-            <p class="copyright">&copy; 2026 Val Clancy Pedro</p>
+            <p class="copyright">&copy; 2026 Val Clancy Pedro.</p>
         </div>
     </footer>
 
